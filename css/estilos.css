@@ -1,0 +1,777 @@
+/*Tipo de fuente importada desde el Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,500;1,500&family=Roboto:ital@1&display=swap');
+
+/*COMIENZA BODY*/
+.backgroundHome {
+    background-image: url(../img/fondo.jpg);
+    /*Imágen de fondo*/
+    /*height: 100vh;
+    /*Alto*/
+    /*width: 100%; */
+    /*Ancho*/
+    background-repeat: no-repeat;
+    /*Que no se repita la imagen*/
+}
+
+.bodyArqui {
+    background-color: black
+}
+
+
+/*estilos del header*/
+header {
+    width: 100%;
+    /*ancho*/
+    height: 150px;
+    /*largo*/
+}
+
+.ancho {
+    width: 100%;
+    height: 245px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div.logo img {
+    width: 190px;
+    height: 190px;
+    margin-left: 0.7%;
+    padding-top: 24px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    padding-top: 50px;
+}
+
+nav ul li {
+    display: inline;
+
+}
+
+nav ul li a {
+    color: rgb(211, 206, 199);
+    text-decoration: none;
+    /*sin subrrayado*/
+    padding-top: 1px;
+    padding-left: 15px;
+    font-weight: bold;
+    /*negrita*/
+    letter-spacing: 1px;
+    /*espacio entre cada letra*/
+    font-size: 1.1rem;
+    /*tamaño de letra*/
+
+}
+
+/*que la nav cambie de color al apoyar el mouse*/
+nav ul li a:hover {
+    color: olive;
+}
+
+/* Nav */
+header nav {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+}
+
+/*selecciono la fuente importada*/
+h1 {
+    font-family: "Roboto";
+    font-weight: 25%;
+    color: #000000cc;
+    /*Color de fuente*/
+    font-size: 5rem;
+    margin: 1%;
+    margin-left: ;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Reseteo completo de márgenes y diseños*/
+* {
+    /*padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;*/
+
+}
+
+
+
+section .propuesta {
+    overflow: visible;
+    font-size: 3rem;
+    background-color: rgba(252, 234, 208, 0.603);
+    width: 950px;
+    height: 500px;
+    border-radius: 15%;
+    padding: 70px 50px 50px 50px;
+    float: none;
+}
+
+.copyright {
+    height: 4rem;
+    margin: 30px;
+    display: flex;
+    align-items: end;
+}
+
+.copyrightArq {
+    height: 2rem;
+    margin: 30px;
+    color: aliceblue;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: end;
+}
+
+.redesSociales {
+    float: right;
+    margin-bottom: 0%;
+
+}
+
+/*propiedades de la caja y sus elementos*/
+.caja {
+    background-color: rgba(252, 234, 208, 0.603);
+    width: 500px;
+    height: 500px;
+    border-radius: 15%;
+    padding: 50px 20px 30px 50px;
+    font-size: 4.1rem;
+    margin: 50px;
+    font-weight: 900;
+    vertical-align: baseline;
+    color: rgba(14, 13, 13, 0.671);
+
+}
+
+
+.arquitectura {
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    justify-content: center;
+}
+
+.redimencion {
+    margin-top: 0%;
+}
+
+.tituloProyectos {
+    font-size: 4.1rem;
+    color: rgb(154, 165, 165);
+    display: flex;
+    justify-content: center;
+    text-decoration: overline underline;
+    /*subrayado arriba y abajo*/
+
+}
+
+h2.descripcion {
+    color: rgb(154, 165, 165);
+    font-size: 1.5rem;
+    margin-top: 0.5%;
+    margin-bottom: 4%;
+    margin: 0.8%;
+}
+
+
+
+
+.contenedor-grid {
+    width: 1565px;
+    height: 6600px;
+    margin: 0%;
+}
+
+/*COMIENZA Grid- padre sección arquitectura*/
+.contenedor-grid {
+    margin: 0%;
+    width: 1570px;
+    height: 6630px;
+    /*largo que le doy al contenedor padre*/
+    background-color: black;
+    justify-items: flex-start;
+    justify-content: center;
+    align-content: start;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 6200px 170px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+    ;
+}
+
+.headerArqui {
+    grid-area: header;
+}
+
+.mainArquitectura {
+    grid-area: main;
+}
+
+footer.footerArqui {
+    grid-area: footer;
+}
+
+/*imagenes*/
+#mainArquitectura img {
+    display: grid;
+    /*en duda si darle este o el del hijo*/
+    inline-size: 99%;
+    width: 100%;
+    margin-left: 0.5%;
+    margin-top: 4%;
+    width: 1560px;
+}
+
+/*COMIENZA GRID seccion NOSOTROS*/
+
+/*Contenedor padre*/
+.bodyNos {
+    margin-left: 0.4%;
+    height: 1000px;
+    important: !important;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 3000px 150px;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer"
+    ;
+}
+
+
+/*Contenedor Hijos*/
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main.sobre {
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(85, 85, 24);
+    border-radius: 6%;
+}
+
+main.sobre h1.titulo_nos {
+    color: rgb(116, 89, 54);
+    font-size: 4.1rem;
+    text-decoration: underline;
+    padding-bottom: 5%;
+}
+
+
+
+/*Inicia media queries Mobile sección Arquitectura*/
+
+@media (min-width: 320px) and (max-width: 576px) {
+    body.contenedor-grid {
+        width: 318px;
+        height: 600px;
+        grid-template-columns: 100%;
+        grid-template-rows: 40px 1220px 10px;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+
+    /*Contenedor Hijos*/
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    div.logo {
+        width: 30%;
+    }
+
+    header div.logo img {
+        width: 50px;
+        height: 50px;
+        margin-left: 8%;
+        padding-top: 15%;
+    }
+
+    .ancho {
+        width: 87%;
+        height: 245px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul li a {
+        color: rgb(211, 206, 199);
+        text-decoration: none;
+        /*sin subrrayado*/
+        padding-top: 0%;
+        padding-left: 10%;
+        font-weight: bold;
+        /*negrita*/
+        letter-spacing: 1px;
+        /*espacio entre cada letra*/
+        font-size: 0.2rem;
+        /*tamaño de letra*/
+
+    }
+
+    main.mainArquitectura {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        /*justify-items: center;*/
+        width: 320px;
+    }
+
+    /*imagenes*/
+    #mainArquitectura img {
+        display: grid;
+        /*en duda si darle este o el del hijo*/
+        inline-size: 99%;
+        width: 100%;
+        margin-left: 0.5%;
+        margin-top: 5%;
+        width: 315px;
+    }
+
+    h2.descripcion {
+        color: rgb(154, 165, 165);
+        font-size: 0.2rem;
+        margin-top: 0.5%;
+        margin-bottom: 4%;
+        margin: 0.8%;
+    }
+
+
+    /*INICIA BOOTSTRAP SECCIÓN ARQUITECTURA*/
+
+    div {
+        width: 100%;
+    }
+
+    /*nav Home*/
+    .navbar-brand {
+        padding-top: var(--bs-navbar-brand-padding-y);
+        padding-bottom: var(--bs-navbar-brand-padding-y);
+        margin-right: var(--bs-navbar-brand-margin-end);
+        font-size: var(--bs-navbar-brand-font-size);
+        color: olive;
+        text-decoration: none;
+        white-space: nowrap;
+        color: olive;
+        font-size: 1.5rem;
+        font-weight: 5%;
+    }
+
+    /*nav resto*/
+
+    element.style {}
+
+    @media (min-width: 992px) .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-nav {
+        --bs-nav-link-padding-x: 0;
+        --bs-nav-link-padding-y: 0.1rem;
+        --bs-nav-link-font-weight: 0.1rem;
+        --bs-nav-link-color: var(--bs-navbar-color);
+        --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+        --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    /*background nav*/
+    .bg-body-tertiary {
+        --bs-bg-opacity: 1;
+        /* background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important; */
+    }
+
+    .nav-link.disabled {
+        /* color: var(--bs-nav-link-disabled-color); */
+        pointer-events: none;
+        cursor: default;
+    }
+
+    .nav-link {
+        display: block;
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: olive;
+        text-decoration: none;
+        background: 0 0;
+        border: 0;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
+
+    .nav-link.disabled {
+        color: olive;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    .navbar>.container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: self-start;
+        justify-content: space-between;
+        width: 40px;
+    }
+
+    div.container-fluid {
+        width: 40px;
+        height: 120px;
+    }
+
+    .container-fluid {
+        color: olive;
+        font-size: 0.2rem;
+        font-weight: 5%;
+        width: 5%;
+    }
+
+    .container.container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        --bs-gutter-x: 0.1rem;
+        --bs-gutter-y: 0.1rem;
+        width: 5%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .bodyNos .ancho .logo .navbarnavba{
+        width: 5%;
+    }
+
+    /*botón nav*/
+
+
+    nav.navbar.navbar-expand-lg {
+        width: 15px;
+        height: 20px;
+    }
+
+    .button.navbar-toggler {
+        width: 15px;
+        height: 20px;
+    }
+
+    element.style {}
+
+    button:focus:not(:focus-visible) {
+        outline: 0;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+    }
+
+    .navbar-toggler:hover {
+        text-decoration: none;
+    }
+
+    [type=button]:not(:disabled),
+    [type=reset]:not(:disabled),
+    [type=submit]:not(:disabled),
+    button:not(:disabled) {
+        cursor: pointer;
+    }
+
+    .navbar-toggler {
+        padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+        font-size: var(--bs-navbar-toggler-font-size);
+        line-height: 1;
+        /*color: rgb(116, 128, 90);*/
+        background-color: #6b6628;
+        /*border: var(--bs-border-width) solid #879b87;*/
+        /*border-radius:nonne;*/
+        transition: var(--bs-navbar-toggler-transition);
+
+    }
+
+    .navbar {
+        --bs-navbar-padding-x: 0;
+        --bs-navbar-padding-y: 0.5rem;
+        --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+        --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+        --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+        --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-padding-y: 0rem;
+        --bs-navbar-brand-margin-end: 0rem;
+        --bs-navbar-brand-font-size: 0.4rem;
+        --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+        --bs-navbar-nav-link-padding-x: 1.5rem;
+        --bs-navbar-toggler-padding-y: 0.1rem;
+        --bs-navbar-toggler-padding-x: 0.1rem;
+        --bs-navbar-toggler-font-size: 0.4rem;
+        --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+        --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+        --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+        --bs-navbar-toggler-focus-width: 0.25rem;
+        --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+    }
+
+    .tituloProyectos {
+        font-size: 1rem;
+        color: rgb(154, 165, 165);
+        display: flex;
+        justify-content: center;
+        text-decoration: overline underline;
+        /*subrayado arriba y abajo*/
+        padding-top: 8%;
+
+    }
+
+
+    div.copyrightArq {
+        margin-top: 0%;
+        width: 100px;
+        height: 0.1px;
+    }
+
+    div.copyrightArq p {
+        width: 80%;
+        height: 2%;
+        margin: 0%;
+        color: aliceblue;
+        margin-bottom: 0%;
+        display: flex;
+        align-items: baseline;
+        font-size: 0.2rem;
+        margin-left: 1%;
+        justify-content: flex-start;
+    }
+
+    div.redes {
+        width: 100px;
+        height: 5px;
+    }
+
+    div.redes ul li a img {
+        float: right;
+        margin-bottom: 0%;
+        width: 5px;
+        height: 5px;
+
+    }
+
+    div.redes ul li {
+        width: 90px;
+    }
+
+}
+
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: olive;
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/*.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}*/
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: rgb(189, 202, 129);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0rem;
+    --bs-navbar-toggler-padding-x: 0rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+/*INICIA MEDIA QUERIES SECCIÓN NOSOTROS*/
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+
+    main.sobre h1.titulo_nos {
+        color: rgb(116, 89, 54);
+        font-size: 1rem;
+        text-decoration: underline;
+        padding-bottom: 1%;
+    }
+
+    /*Contenedor padre*/
+    .bodyNos {
+        height: 700px;
+        important: !important;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 55px 650px 15px;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer"
+        ;
+    }
+
+
+    /*Contenedor Hijos*/
+
+    header {
+        grid-area: header;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
+    main.sobre {
+        font-size: 0.2rem;
+        margin-top: 0.5%;
+        margin-bottom: 4%;
+        margin: 0.8%;
+        background-color: antiquewhite;
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 0.5rem;
+        color: rgb(85, 85, 24);
+        border-radius: 5%;
+    }
+
+       main.sobre img{
+        display: grid;
+       width: 310px ;
+    }
+
+
+
+    div.copyright{
+        width: 100px;
+        height: 15px;
+    }
+
+    section div.copyright {
+        margin-top: 0%;
+        width: 200px;
+        height: 2px;
+    }
+
+    section div.copyright p {
+        width: 80%;
+        height: 2%;
+        margin: 0%;
+        color: black;
+        margin-bottom: 8%;
+        display: flex;
+        align-items: baseline;
+        font-size: 0.4rem;
+        margin-left: 1%;
+        justify-content: flex-start;
+    }
+
+    div.redesSociales {
+        width: 100px;
+        height: 20px;
+    }
+
+    div.redesSociales ul li a img {
+        float: right;
+        margin-bottom: 0%;
+        width: 15px;
+        height: 15px;
+
+    }
+
+    div.redes ul li {
+        width: 90px;
+    }
+    
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    body .container-fluid{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            background-color: #E7EBDA;
+            padding: 0.5em;
+            margin: 2em 20em;
+    }
+
+
+
+}
